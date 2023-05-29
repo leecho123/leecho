@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transform-style: preserve-3d;
+}
+.front>p{
+    transform: translateZ(20px);
+}
+.back>p{
+    transform: translateZ(20px);
+}
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  transition: 1s;
+  background-image: url(./img/91d39738cbd09e5d02090da8d6de999a_721633155107864035.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.back {
+  background-image: url(./img/a6ff91c08ee1bc0967567d97051cad76_4864960057670375541.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.box:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.box:hover .back {
+  transform: rotateY(0deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="front"> <p>正面</p></div>
+        <div class="back"><p>反面</p></div>
+      </div>
+      
+</body>
+</html>
