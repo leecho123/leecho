@@ -333,3 +333,4 @@ function guanbiqq(){
     qq.style.display="none";
         //启用滚动条
 }
+alert("本网站只是展示网站效果，不存在任何商业行为，如有侵权，联系站主删除 微信号:zl15279857273");
