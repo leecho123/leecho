@@ -298,7 +298,7 @@ for (let i = 0; i < pingtaitubiao.children.length; i++) {
             pingtaitubiao.children[i].src = "./img/gongzhonghao1.png"
         }
         if (i === 2) {
-            pingtaitubiao.children[i].src = "./img/qq1.png"
+            pingtaitubiao.children[i].src = "./img/QQ1.png"
         }
         if (i === 3) {
             pingtaitubiao.children[i].src = "./img/fenxiangfangshi1.png"
